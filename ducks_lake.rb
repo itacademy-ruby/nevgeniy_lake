@@ -2,35 +2,35 @@
 # Duck
  
 module Flying
-def fly
-'Flying'
-end
+  def fly
+    'Flying'
+  end
 end
  
 module Quacking
-def quacking
-'Quacking'
-end
+  def quacking
+    'Quacking'
+  end
 end
  
 module Swiming
-def swiming
-'Swiming'
-end
+  def swiming
+    'Swiming'
+  end
 end
  
 class Duck
-def fly
-"Can't Fly"
-end
+  def fly
+    "Can't Fly"
+  end
  
-def swiming
-"Can't swim"
-end
+  def swiming
+    "Can't swim"
+  end
  
-def quacking
-"Can't quack"
-end
+  def quacking
+    "Can't quack"
+  end
 end
  
 class RealDuck < Duck
