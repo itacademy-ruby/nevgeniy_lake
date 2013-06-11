@@ -37,6 +37,10 @@ class Duck
   def quacking
     "Can't quack"
   end
+
+  def eating
+    "Can't Eating"
+  end
 end
  
 class RealDuck < Duck
