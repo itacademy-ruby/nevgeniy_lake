@@ -5,8 +5,16 @@ module Flying
   def fly
     'Flying'
   end
+
+  def reactive_fly 
+    "reactive_fly"
+  end
+
+  def mechanical_fly
+    "mechanical_fly"
+  end
 end
- 
+
 module Quacking
   def quacking
     'Quacking'
@@ -25,6 +33,8 @@ module Eating
   end
 end
 
+
+
 class Duck
   def fly
     "Can't Fly"
@@ -40,6 +50,14 @@ class Duck
 
   def eating
     "Can't Eating"
+  end
+
+  def reactive_fly 
+    "Can't reactive_fly"
+  end
+
+  def mechanical_fly
+    "Can't mechanical_fly"
   end
 end
  
@@ -76,7 +94,9 @@ ducks << RobotsDuck.new
 ducks.each do |duck|
 puts "#{duck.class} #{duck.swiming}"
 puts "#{duck.class} #{duck.quacking}"
-puts "#{duck.class} #{duck.fly}"
+puts "#{duck.class} #{duck.reactive_fly}"
+puts "#{duck.class} #{duck.mechanical_fly}"
 puts "#{duck.class} #{duck.eating}"
+
  
 end
